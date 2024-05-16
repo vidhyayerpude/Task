@@ -1,0 +1,12 @@
+  #maincont{
+    width: 500px;
+    height: auto;
+    background-color: aqua;
+    float: left;
+  }
+  @media screen and (min-width: 650px) {
+    #maincont{
+        width: 100px;
+    }
+    
+  }

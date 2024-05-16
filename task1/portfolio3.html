@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/60d07f59bd.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        color: white;
+        padding: 20px;
+        margin: 0 10px;
+        /* width: 100%; */
+    }
+
+    ul li a {
+        color: aqua;
+
+    }
+
+    ul li:hover {
+        color: aqua;
+    }
+
+    a {
+        text-decoration: none;
+
+        font-size: 20px;
+        color: white;
+    }
+
+    body {
+        background-color: gainsboro;
+    }
+
+    /* Header styling */
+    header {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+
+    nav {
+        background-color: black;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        /* Ensure the navbar stays on top of other content */
+    }
+
+    nav .container {
+
+        width: 100%;
+        /* Ensure the container takes full width of the navbar */
+        display: flex;
+        justify-content: center;
+    }
+
+
+    nav .container {
+        position: sticky;
+        top: 0;
+    }
+
+    .celine {
+        color: rgb(13, 110, 247);
+        margin-left: 0px;
+    }
+
+    .celine:hover {
+        color: blueviolet;
+    }
+
+    ul li a:hover {
+        color: blueviolet;
+    }
+
+    .right {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .Services,
+    .Portfolio,
+    .About,
+    .Team {
+        text-align: center;
+        /* margin-top: 50px; */
+    }
+
+    .container {
+        display: inline-block;
+    }
+
+    .conta {
+        background-image: url(/images/bamboo.jfif);
+        padding: 50px;
+        text-align: center;
+    }
+
+    button {
+        background-color: aqua;
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        cursor: pointer;
+        margin: auto;
+    }
+
+    button:hover {
+        background-color: blueviolet;
+    }
+
+    .Services {
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+
+    .Portfolio {
+        text-align: center;
+        background-color: white;
+        width: 100%;
+        /* margin-top: 50%; */
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    .About h1,
+    p,
+    b {
+        text-align: center;
+    }
+    .social-button {
+    display: flex;
+    justify-content: center;
+}    .social-button a {
+        margin-bottom: 0;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        font-size: 20px;
+        outline: 0;
+        line-height: 40px;
+        color: #fff;
+        background-color: #222;
+    }
+    .social-button a:hover,
+    .social-button a:focus,
+    .social-button a:active {
+     background-color: aqua;
+    }
+    form {
+        background-image: url(../images/dhua.avif);
+        color: white;
+        text-align: center;
+        padding: 90px;
+        box-sizing: border-box;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .Contact label {
+        display: block;
+        /* Make labels block elements */
+        margin-bottom: 10px;
+        /* Add some space below each label */
+    }
+    .Contact input[type="text"],
+    .Contact input[type="email"],
+    .Contact input[type="number"],
+    .Contact textarea {
+        width: 100%;
+        /* Make input fields and textarea full width */
+        padding: 10px;
+        /* Add some padding to input fields and textarea */
+        margin-bottom: 20px;
+        /* Add some space below each input field */
+        box-sizing: border-box;
+        /* Ensure padding is included in the width */
+    }
+
+    textarea {
+        resize: vertical;
+
+    }
+
+    .Team {
+        text-align: center;
+    }
+
+    b {
+        .center {
+            margin: 0 auto;
+            /* This sets top and bottom margins to 0 and left and right margins to auto */
+            width: fit-content;
+            /* Optional, this will make the element's width fit its content */
+        }
+
+    }
+
+    .Send {
+        background-color: aqua;
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .Send:hover {
+        background-color: rgb(16, 67, 67);
+    }
+
+    .img:hover {
+        background-color: aqua;
+    }
+
+    .copy {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    .copy p {
+        margin-bottom: 10px;
+
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+
+                <li><a class="celine" href="#Home">Celline Is Awesome</a></li>
+                <li><a class="page-scroll" href="#Services">Services</a></li>
+                <li><a class="page-scroll" href="#Portfolio">Portfolio</a></li>
+                <li><a class="page-scroll" href="#about">About</a></li>
+                <li><a class="page-scroll" href="#Team">Team</a></li>
+                <li><a class="page-scroll" href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- header -->
+    <header>
+
+        <div class="conta" id="Home">
+            <i style=" text-align: center;    margin-left: 45%;color: white;font-size: 25px;">Hello Errbody</i>
+            <h1 style="color: white;">YES MEL, AJMAL, CHIEN, JUNNE MAYBE AND SYOK.</h1>
+            <button style="margin-left: 45%;">Aku Bukan Sempit</button>
+        </div>
+    </header>
+    <div class="Services" id="Services">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit.</p>
+        <i class="fa-solid fa-tree"></i>
+        <h4>Here is a pokok</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, voluptatem <br>expedita, ex placeat dicta ad
+            adipisci quod pariatur, quaerat fugit optio cumque!</p>
+        <i class="fa-solid fa-heart"></i>
+        <h4>Here's a heart</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo,<br> voluptatem expedita, ex placeat dicta ad
+            adipisci quod pariatur, quaerat fugit optio cumque!</p>
+        <i class="fa-solid fa-droplet"></i>
+        <h4>Waterfall maybe?</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, <br>voluptatem expedita, ex placeat dicta ad
+            adipisci quod pariatur, quaerat fugit optio cumque!</p>
+    </div>
+    <!-- Portfolio -->
+
+    <div class="Portfolio" id="Portfolio">
+        <h1>PORTFOLIO</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <!-- <div class="card"> -->
+        <img class="img" src="../images/dhua.avif" alt="" width="400px" height="300px">
+        <p> Round Icons </p>
+        <i>Graphic Design</i>
+
+        <!-- </div> -->
+        <br>
+        <!-- <div class="card"> -->
+
+        <img class="img" src="../images/vadiya.avif" alt="" width="400px" height="300px"><br>
+        <p>Startup Framework</p>
+        <i>Website Design</i><br>
+        <!-- </div> -->
+        <!-- <div class="card"> -->
+        <img class="img" src="../images/buildin.avif" alt="" width="400px" height="300px"><br>
+        <p>TreeHouse</p>
+        <i>Website Design</i><br>
+        <!-- </div> -->
+        <!-- <div class="card"> -->
+        <img class="img" src="../images/vadiya.avif" alt="" width="400px" height="300px"><br>
+        <p>Goden</p>
+        <i>Wesite Design</i><br>
+        <!-- </div> -->
+        <!-- <div class="card"> -->
+        <img class="img" src="../images/dhua.avif" alt="" width="400px" height="300px"><br>
+        <p>Dreams</p>
+        <i>Website Design</i>
+        <!-- </div> -->
+    </div>
+    <!-- About -->
+
+    <div class="About" id="about">
+        <h1>About</h1>
+        <p>Ajmal,I need help to learn how to tweak this part.I don't want this timeline crap .Haha</p>
+
+
+        <!-- <h2 class="heading">2009-2011</h2> <br> -->
+        <h2 class="subheading" style="text-align: center;">Our Humble Beginnings</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>br Autem ullbr
+            am voluptatem, cumque minima excepturi non
+            sequi qui sint porro cum, dolores est?</p>
+        <!-- <h2 class="heading" style="text-align: center;">March 2011</h2> -->
+        <br>
+        <h2 class="subheading" style="text-align: center;">An Agency is Born</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus
+            <br>quaerat est nam quisquam, pariatur maxime
+            ex ut, temporibus totam magnam iste odio.
+        </p>
+        <h2 class="heading" style="text-align: center;">DECEMBER 2012</h2> <br>
+        <h2 class="subheading" style="text-align: center;">Transition to Full Service</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eum <br>velit architecto nemo aut sint,
+            odit
+            nam
+            eos! Ex id voluptatem voluptatibus!</p>
+        <!-- <h2 class="heading">July 2014</h2> -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.br <br> Reiciendis dicta doloremque voluptatibus
+            sunt id
+            enim
+            vitae ipsa. Natus fugiat vel nisi porro.</p>
+    </div>
+    <!-- Team -->
+
+    <div class="Team" id="Team">
+        <h1>Our Amazing Team</h1>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+
+        <b>KayGarland</b>
+        <p>Lead Designer</p>
+        <br>
+        <div class="social-button">
+            <a href="https:/google.com"><i class="fa fa-twitter"></i></a>
+            <a href="https:/google.com"><i class="fa fa-facebook"></i></a>
+            <a href="https:/google.com"><i class="fa fa-linkedin"></i></a>
+
+        </div><br>
+        <b>Larry Parker</b>
+        <p>Lead Markete</p>
+        <br>
+        <div class="social-button">
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div><br>
+
+        <b>Diana Pertersen</b>
+        <p>Lead Developer</p>
+        <br>
+        <div class="social-button">
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div><br>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, maiores tempore.</p>
+    </div>
+    <!-- contact us -->
+    <form class="Contact" id="Contact">
+        <label for="">Name</label>
+        <input type="text" placeholder="Your name" style="padding: 20px;">
+        <br>
+        <br>
+        <label for="">Email</label>
+        <input type="Email" placeholder="Your Email" style="padding: 20px;">
+        <br>
+        <br>
+        <label for="">number</label>
+        <input type="number" placeholder="Your Number" style="padding: 20px;">
+        <br><br>
+
+        <label style="display: inline;" for="">Message</label>
+        <textarea name="" cols="20" rows="7" id="" style="padding: 20px;vertical-align: top;"></textarea>
+    </form>
+    <!-- copy
+ -->
+    <div class="copy">
+        <p>Copyright &copy; Your Website 2014</p>
+
+        <div class="social-button">
+            <a href=""><i class="fa fa-twitter"></i></a>
+            <a href=""><i class="fa fa-facebook"></i></a>
+            <a href=""><i class="fa fa-linkedin"></i></a>
+        </div>
+        <a href="#Home">
+            <p style="color: blue;">Privacy Policy &nbsp; Terms of Use</p>
+        </a>
+    </div>
+</body>
+
+</html>

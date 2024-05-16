@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Student Records</h1>
+
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Mark</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Table rows will be dynamically added here -->
+    </tbody>
+</table>
+
+<script>
+    // Sample student records
+    const studentRecords = [
+        { name: 'John Doe', mark: 95 },
+        { name: 'Jane Smith', mark: 88 },
+        { name: 'Sam Johnson', mark: 98 },
+        // Add more student records as needed
+    ];
+
+    // Function to filter and display student records
+    function displayStudentRecords() {
+        const tableBody = document.getElementById('studentTable').getElementsByTagName('tbody')[0];
+        tableBody.innerHTML = '';
+
+        student

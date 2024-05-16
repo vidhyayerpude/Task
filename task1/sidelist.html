@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/60d07f59bd.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+    ul {
+        list-style: none;
+    }
+
+    ul li {
+        display: inline-block;
+        background-color: aqua;
+        position: relative;
+        line-height: 40px;
+        text-align: center;
+        width: 190px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        font-weight: bold;
+    }
+
+    ul li ul li {
+        display: none;
+    }
+    ul  ul ul {
+        display: none;
+    }
+    
+
+
+    ul li:hover ul li {
+        display: block;
+    }
+
+    ul li a:hover {
+        background-color: green;
+
+    }
+    ul ul ul{
+        display: none;
+    }
+    ul ul ul  li{
+        display: block;
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="# ">Home</a></li>
+            <li> <a href="#">subject <i class="fa-solid fa-circle-chevron-down"></i></a>
+                <ul style="position: absolute;">
+                    <li> <a href="#">hindi</a></li>
+                    <li> <a href="#">english</a></li>
+                    <li> <a href="#">maths <i class="fa-solid fa-circle-chevron-down"></i> </a>
+                        <ul style="position: absolute;">
+                            <li><a href="#">math1</a> </li>
+                            <li> <a href="#">math2</a> </li>
+                            <li> <a href="#">math3 <i class="fa-solid fa-circle-chevron-down"></i></a>
+                             <ul> 
+                                <li><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                            </ul></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </li>
+            <li> <a href="#">class</a></li>
+            <li><a href="#">about us</a> </li>
+            <li> <a href="#">services</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>

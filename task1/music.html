@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/60d07f59bd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-H6xqUzVwNrvQX9Z1GC0P8QlsLOul6NPVYw9sMIV+zlXRD3dP+hKpX5yoj19oV+gH" crossorigin="anonymous">
+
+    <style>
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            float: right;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .CONTAINER {
+            width: 100%;
+            position: absolute;
+            top: 45%;
+        }
+
+        .SOUNDS {
+            margin-left: 11%;
+        }
+
+        .SOUNDS p {
+            font-size: 50px; /* Changed to lowercase "px" */
+            color: crimson;
+        }
+
+        .PLAY {
+            float: right;
+            margin-right: 10%;
+            margin-top: -5%;
+            display: flex;
+            align-items: center;
+        }
+
+        .PLAY p {
+            font-size: 21px; /* Changed to lowercase "px" */
+            font-weight: 650;
+            color: black;
+            margin-right: 20px; /* Removed "PX" */
+        }
+
+        .CONTAINER {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../images/music_page.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        #ICON {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">ARTISTS</a></li>
+            <li><a href="#">MUSIC</a></li>
+            <li><a href="#">HOME</a></li>
+        </ul>
+    </nav>
+    <div class="CONTAINER">
+        <div class="SOUNDS">
+            <p>
+                MY SOUNDS
+            </p>
+        </div>
+        <div class="PLAY">
+            <p>CLICK HEAR TO PLAY <i class="fas fa-play" id="ICON"></i></p>
+        </div>
+    </div>
+    <audio id="mysound" src="../media/Excuses.mp3"></audio> <!-- Changed id to "mysound" -->
+    <script>
+        let mysound = document.getElementById("mysound");
+        let icon = document.getElementById("ICON");
+
+        // Creating a function that will change 
+        // pause to play and vice-versa
+        icon.onclick = function () {
+            if (mysound.paused) {
+                // If paused then play the 
+                // music and change the icon
+                mysound.play();
+                icon.className = "fas fa-pause"; // Changed the class to pause icon
+            } else {
+                // If playing then pause the
+                // music and change the icon
+                mysound.pause();
+                icon.className = "fas fa-play"; // Changed the class to play icon
+            }
+        }
+    </script>
+</body>
+
+</html>

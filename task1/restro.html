@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        list-style: none;
+        background-color: gray;
+        padding: 20px;
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        display: block;
+        /* background-color: gray; */
+        color: white;
+        padding: 1px;
+        border-radius: 10px;
+
+    }
+
+    ul li a:hover {
+        background-color: red;
+    }
+
+    ul li {
+        display: inline-block;
+
+    }
+
+    h1 {
+        color: red;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+
+    }
+
+    .container1 {
+        position: relative; 
+     display: flex; 
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 63vh;
+        background-repeat: no-repeat;
+
+    } 
+
+    .container1{
+        background-image: url(../images/rest1.jfif);
+        
+        position: absolute;
+        height: 59vh;
+        width: 100vh;
+        font-weight: bold;
+        top: 0px;
+        left: 0px;
+        opacity: 0.89;
+        border: 2px solid black;
+        border-bottom-left-radius: 100px;
+    }
+
+
+    button {
+        background-color: yellow;
+
+    }
+
+    button:hover {
+        background-color: red;
+
+    }
+</style>
+
+<body>
+
+    <h1>Online</h1>
+    <p>FoodShop</p>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Contact us</a></li>
+    </ul>
+    <div class="container1">
+        <div id="row1">
+            <!-- <img src="../images/rest1.jfif" alt=""> -->
+            <p>Welcome to online foodshop
+            </p>
+        </div>
+        <button>ORDER NOW</button>
+        <button>Prices</button>
+        <button>Specials</button>
+
+    </div>
+    <footer>
+        Copyright OnlineFoodShop
+    </footer>
+</body>
+
+</html>

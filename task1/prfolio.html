@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a portfolio Gallery using HTML and CSS</title>
+</head>
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+    }
+
+    a {
+        text-decoration: none;
+        color: #081b55;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
+    h1 {
+        color: green;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+    .row {
+        padding: 8px;
+        margin: 0px -18px;
+    }
+.row> .column{
+    padding: 6px;
+}
+    .content {
+        border: 2px solid black;
+        background-color: rgb(207, 175, 191);
+        padding: 10px;
+        margin: 20px;
+        text-align: center;
+        justify-content: center;
+
+    }
+    @media screen and (max-width:850px) {
+        .column{
+            width: 50%;
+        }
+        
+    }
+    @media screen and (max-width:400px) {
+        .column{
+            width: 100%;
+        }
+        
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>Vidhyayerpude</h1>
+        <h3>A computer science portal </h3>
+<hr>
+        <h2>Portfolio</h2>
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="../images/html.png" alt="" width="100%">
+                    <h3>
+                        <a href="#">Html tutorial</a>
+                    </h3>
+                    <p>html stands for hyper text markup language.It is used to design web pages using markup language.
+                        HTMl is
+                        the
+                        combination of Hypertext defiines the link between the web pages.</p>
+
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+
+                    <img src="../images/CSS (1).png" alt="" width="100%">
+
+                    <h3>
+                        <a href="#">css tutorial</a>
+                    </h3>
+                    <p>Cascading style sheets ,foundly referred to as CSS, is a simply designed language intended to
+                        siimpy the
+                        process
+                        of making web pages presentable .CSS allows you to apply styles to web pages</p>
+
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="../images/php-1.png" alt="" width="100%">
+                    <h3>
+                        <a href="#">php tutorial</a>
+                    </h3>
+                    <p>The term php is an acrnym for php. Hypertext Prepessor.PHP is a server-side scripting language
+                        designed
+                        speially
+                        for web development .PHP can be easily embedded in html files</p>
+                    <br>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="../images/javascript.png" alt="" width="100%">
+                    <h3>
+                        <a href="#">javascript tutorial</a>
+                    </h3>
+                    <p>javascript was developed by Brendan Eich in 1995 .At first ,it is called Livescript but was later
+                        name to
+                        javascript.Javsript is the muscle of the structure</p>
+
+                    <br>
+                    <br>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

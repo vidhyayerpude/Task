@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+function person(firstName,lastName,dob){
+    this.firstName =firstName;
+    this.lastName =lastName;
+    this.dob =dob;
+}
+const person1=new person('vidhya ','yerpude','20-03-2002');
+const person=new person('vidhya ','yerpude','20-03-2002');
+console.log(person1.dob);
+</script>
+
+<?php
+$servername="localhost";
+$username="root"
+$password="";
+$db="projectx";
+$conn=mysqli_connect($servername,$username,$password,$db)
+if($conn)
+else{
+    die("error".mysqli_connect_error())
+}?>
+,/php
+if ($_SERVER["REQUEST_METHOD"]="post")
+include'dbconnect.php';
+$usrname=$_POST["logemail"];
+$password=$_POST["logpass"];
+$sqli="SELECT*FROM user where email='$username'";
+$result1=mysqli_query($conn,$sqli);
+$num=mysqli_num_rows($result1);
+if($num==1){
+    $row=mysqli_fatch_assoc($result1);
+    if(password_verify($password,$row[$password]{
+        sesion_Start();
+        $_SESSION['LOGGEDIN']=TRUE;
+        $_SESSION['useremail']=$username
+    }))
+}

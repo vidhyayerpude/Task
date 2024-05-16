@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- Include jQuery -->
+    <scrip    t src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#b").hover(function() {
+                $("h1").toggle();
+            });
+            $("input").focus(function() {
+                $("input").css("background-color", "red");
+            });
+            $("input").blur(function() {
+                $("input").css("background-color", "pink");
+            });
+            $("form").submit(function() {
+                alert("Form is submitted");
+            });
+        });
+    </script>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- Your HTML content here -->
+    <h1>This is a jQuery tutorial</h1>
+    <div id="b">This is the jQuery tutorial</div>
+    <h1 class="jafri" title="jafri">This is the jQuery tutorial</h1>
+    <h1 title="faisal">JafriCode.com</h1>
+</body>
+</html>
+//sucessfull......................................
